@@ -4,8 +4,9 @@ package capybara.wholesome;
 // then press Enter. You can now see whitespace characters in your code.
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@org.springframework.boot.autoconfigure.SpringBootApplication
+@SpringBootApplication
 public class PlannerApplication {
 
     public static void main(String[] args) {
