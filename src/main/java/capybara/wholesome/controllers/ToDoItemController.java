@@ -12,7 +12,7 @@ import java.util.Collection;
 @RequiredArgsConstructor
 public class ToDoItemController {
 
-    private final ToDoItemService itemService;
+    private final ToDoItemService toDoItemService;
 
     @GetMapping(value = "/greeting",
     produces = MediaType.APPLICATION_JSON_VALUE)
@@ -21,13 +21,13 @@ public class ToDoItemController {
     }
 
     @GetMapping("/item")
-    Collection<ToDoItem> getItems() {
-        return itemService.getAll();
+    Collection<ToDoItem> getToDoItems() {
+        return toDoItemService.getAll();
     }
 
     @PostMapping("/item")
-    ToDoItem createItem(@RequestBody ToDoItem toDoItem) {
-        return itemService.save(toDoItem);
+    ToDoItem createToDoItem(@RequestBody ToDoItem toDoItem) {
+        return toDoItemService.save(toDoItem);
     }
 
 }
