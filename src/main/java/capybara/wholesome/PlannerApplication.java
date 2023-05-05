@@ -6,10 +6,10 @@ package capybara.wholesome;
 import org.springframework.boot.SpringApplication;
 
 @org.springframework.boot.autoconfigure.SpringBootApplication
-public class SpringBootApplication {
+public class PlannerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootApplication.class, args);
+        SpringApplication.run(PlannerApplication.class, args);
     }
 
 }
