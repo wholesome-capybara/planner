@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
+//ToDo: to be removed
 public class ItemsProvider {
     ArrayList<String> items;
 
